@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+nav {
+  font-family: 'Indie Flower', sans-serif;
+  text-align: center;
+  background-color: #89FFFA; }
+  nav h1, nav h4 {
+    margin-top: 10px;
+    color: #22403E; }
+  nav h1 {
+    margin-left: 100px;
+    font-weight: bold; }
+  nav h4 {
+    margin-right: 50px; }
+  nav h4:hover {
+    color: #447F7D; }
+  nav #last-item {
+    margin-right: 100px; }
+
+#first-row:first-child {
+  background: url("../img/vacas.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+#first-row:last-child {
+  background: url("../img/naomi.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/*# sourceMappingURL=main.css.map */
