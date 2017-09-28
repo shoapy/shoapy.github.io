@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Poppins:300');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300');
 
 $primary-color: #89FFFA;
 $secondary-color: #22403E;
@@ -15,8 +16,8 @@ $nav-small-space: 50px;
     background-size: cover;
 }
 
-html {
-    font-family: Poppins, sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 .indie {
@@ -54,6 +55,15 @@ nav {
     @include st-bg-img("../img/vacas.jpg");
 }
 
-#main-title {
-    margin-top: 90px;
+#second-main-title {
+    background-color: $primary-color;
+}
+
+#second-main {
+    @include st-bg-img("../img/soap.jpg");
+
+    #second-main-left {
+        background-color: $primary-color;
+        border-radius: 49%;
+    }
 }

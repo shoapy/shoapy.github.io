@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Poppins:300");
-html {
-  font-family: Poppins, sans-serif; }
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300");
+body {
+  font-family: 'Poppins', sans-serif; }
 
 .indie {
   font-family: 'Indie Flower', sans-serif; }
@@ -28,7 +29,17 @@ nav {
   -o-background-size: cover;
   background-size: cover; }
 
-#main-title {
-  margin-top: 90px; }
+#second-main-title {
+  background-color: #89FFFA; }
+
+#second-main {
+  background: url("../img/soap.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #second-main #second-main-left {
+    background-color: #89FFFA;
+    border-radius: 49%; }
 
 /*# sourceMappingURL=main.css.map */
