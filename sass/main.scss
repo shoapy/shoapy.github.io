@@ -15,6 +15,10 @@ $nav-small-space: 50px;
     background-size: cover;
 }
 
+html {
+    @include st-bg-img("../img/vacas.jpg");
+}
+
 nav {
     font-family: 'Indie Flower', sans-serif;
     text-align: center;
@@ -40,15 +44,5 @@ nav {
 
     #last-item {
         margin-right: $nav-big-space;
-    }
-}
-
-#first-row {
-    &:first-child {
-        @include st-bg-img("../img/vacas.jpg");
-    }
-
-    &:last-child {
-        @include st-bg-img("../img/naomi.jpg");
     }
 }

@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+html {
+  background: url("../img/vacas.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 nav {
   font-family: 'Indie Flower', sans-serif;
   text-align: center;
@@ -15,18 +22,5 @@ nav {
     color: #447F7D; }
   nav #last-item {
     margin-right: 100px; }
-
-#first-row:first-child {
-  background: url("../img/vacas.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-#first-row:last-child {
-  background: url("../img/naomi.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
