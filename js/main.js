@@ -1,7 +1,8 @@
 $(document).ready(function () {
 
     var windowHeight = $(window).height();
+    var headerHeight = $("#main").offset().top;
 
-    $("#first-row").css({"height": windowHeight + "px"});
+    $("#main").css({"height": (windowHeight - headerHeight) + "px"});
 
 });

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Poppins:300');
 
 $primary-color: #89FFFA;
 $secondary-color: #22403E;
@@ -16,11 +16,14 @@ $nav-small-space: 50px;
 }
 
 html {
-    @include st-bg-img("../img/vacas.jpg");
+    font-family: Poppins, sans-serif;
+}
+
+.indie {
+    font-family: 'Indie Flower', sans-serif;
 }
 
 nav {
-    font-family: 'Indie Flower', sans-serif;
     text-align: center;
     background-color: $primary-color;
 
@@ -36,13 +39,21 @@ nav {
 
     h4 {
         margin-right: $nav-small-space;
-    }
 
-    h4:hover {
-        color: $terciary-color;
+        &:hover {
+            color: $terciary-color;
+        }
     }
 
     #last-item {
         margin-right: $nav-big-space;
     }
+}
+
+#main {
+    @include st-bg-img("../img/vacas.jpg");
+}
+
+#main-title {
+    margin-top: 90px;
 }
