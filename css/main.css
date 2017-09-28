@@ -6,6 +6,12 @@ body {
 .indie {
   font-family: 'Indie Flower', sans-serif; }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.75em; }
+
 nav {
   text-align: center;
   background-color: #89FFFA; }
@@ -29,7 +35,7 @@ nav {
   -o-background-size: cover;
   background-size: cover; }
 
-#second-main-title {
+.main-title {
   background-color: #89FFFA; }
 
 #second-main {
@@ -38,8 +44,12 @@ nav {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  #second-main #second-main-left {
-    background-color: #89FFFA;
-    border-radius: 49%; }
+
+#third-main {
+  background: url("../img/ovejas.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

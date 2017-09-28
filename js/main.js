@@ -12,23 +12,41 @@ $(document).ready(function () {
     var mainTitleMarginTop = 0.25 * mainHeight;
     $("#main-title").css({
         "margin-top": (mainTitleMarginTop) + "px"
-    })
+    });
 
     var divTextHeight = 0.15 * windowHeight;
     var divImgHeight = 0.85 * windowHeight;
 
     $("#second-main-title").css({
         "height": (divTextHeight) + "px"
-    })
+    });
 
     $("#second-main").css({
         "height": (divImgHeight) + "px"
-    })
+    });
 
     $("#second-main-left").css({
-        "height": (divImgHeight * 0.7) + "px",
-        "width": (divImgHeight * 0.7) + "px"
-    })
+        "height": (divImgHeight * 0.75) + "px",
+        "width": (divImgHeight * 0.75) + "px"
+    });
+
+    $(".overlay").css({
+        "width": "100%",
+        "height": "100%"
+    });
+
+    $("#third-main-title").css({
+        "height": (divTextHeight) + "px"
+    });
+
+    $("#third-main").css({
+        "height": (divImgHeight) + "px"
+    });
+
+    var overlayTop = $(".overlay").height() / 2 - $(".overlay").children().height() / 2;
+    $(".overlay").children().css({
+        "margin-top": (overlayTop) + "px"
+    });
 
     var secondMainCanvas = $("#second-main-left")[0];
     secondMainCanvas.width = secondMainCanvas.scrollWidth;
@@ -38,9 +56,22 @@ $(document).ready(function () {
 
     var cx = secondMainCanvas.width / 2;
     var cy = secondMainCanvas.height / 2;
-    var r = cx * 0.8;
+    var r = cx * 0.95;
     var amp = cx * 0.05;
     var freq = 10;
+
+    secondMainContext.beginPath();
+    secondMainContext.fillStyle = "#89FFFA";
+
+    secondMainContext.moveTo(cx, r + cy + amp);
+    for (var rad = 0.0; rad <= 2 * Math.PI; rad = rad + 0.001) {
+        var x = - Math.sin(rad) * (r + amp * Math.cos(freq * rad));
+        var y = Math.cos(rad) * (r + amp * Math.cos(freq * rad));
+        secondMainContext.lineTo(x + cx, y + cy);
+    }
+    secondMainContext.fill();
+
+    var r = cx * 0.85;
 
     secondMainContext.beginPath();
     secondMainContext.strokeStyle = "white";
