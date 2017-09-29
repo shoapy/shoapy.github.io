@@ -24,13 +24,6 @@ body {
     font-family: 'Indie Flower', sans-serif;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 1.75em;
-}
-
 nav {
     text-align: center;
     background-color: $primary-color;
@@ -41,7 +34,7 @@ nav {
     }
 
     h1 {
-        margin-left: $nav-big-space;
+        margin-left: $nav-small-space;
         font-weight: bold;
     }
 
@@ -64,6 +57,27 @@ nav {
 
 .main-title {
     background-color: $primary-color;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.75em;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    color: $secondary-color;
+    border-color: $secondary-color;
+    border-width: thick;
+
+    &:hover {
+        background-color: $secondary-color;
+        color: $primary-color;
+        border-color: $secondary-color;
+        border-width: thick;
+    }
 }
 
 #second-main {

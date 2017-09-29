@@ -6,12 +6,6 @@ body {
 .indie {
   font-family: 'Indie Flower', sans-serif; }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 1.75em; }
-
 nav {
   text-align: center;
   background-color: #89FFFA; }
@@ -19,7 +13,7 @@ nav {
     margin-top: 10px;
     color: #22403E; }
   nav h1 {
-    margin-left: 100px;
+    margin-left: 50px;
     font-weight: bold; }
   nav h4 {
     margin-right: 50px; }
@@ -37,6 +31,23 @@ nav {
 
 .main-title {
   background-color: #89FFFA; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.75em; }
+
+.btn-primary {
+  background-color: #89FFFA;
+  color: #22403E;
+  border-color: #22403E;
+  border-width: thick; }
+  .btn-primary:hover {
+    background-color: #22403E;
+    color: #89FFFA;
+    border-color: #22403E;
+    border-width: thick; }
 
 #second-main {
   background: url("../img/soap.jpg") no-repeat center center fixed;
