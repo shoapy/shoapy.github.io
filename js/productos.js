@@ -9,4 +9,6 @@ $(document).ready(function () {
         "height": (productContainerHeight) + "px"
     });
 
+    alert('scnidufcn');
+
 });
