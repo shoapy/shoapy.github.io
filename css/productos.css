@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300");
+body {
+  font-family: 'Poppins', sans-serif; }
+
+.indie {
+  font-family: 'Indie Flower', sans-serif; }
+
+nav {
+  text-align: center;
+  background-color: #89FFFA; }
+  nav h1, nav h4 {
+    margin-top: 10px;
+    color: #22403E; }
+  nav h1 {
+    margin-left: 50px;
+    font-weight: bold; }
+  nav h4 {
+    margin-right: 50px; }
+    nav h4:hover {
+      color: #447F7D; }
+  nav #last-item {
+    margin-right: 100px; }
+
+/*# sourceMappingURL=productos.css.map */

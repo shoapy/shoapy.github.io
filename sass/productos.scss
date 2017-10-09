@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300');
+
+$primary-color: #89FFFA;
+$secondary-color: #22403E;
+$terciary-color: #447F7D;
+
+$nav-big-space: 100px;
+$nav-small-space: 50px;
+
+@mixin st-bg-img ($img) {
+    background: url($img) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.indie {
+    font-family: 'Indie Flower', sans-serif;
+}
+
+nav {
+    text-align: center;
+    background-color: $primary-color;
+
+    h1, h4 {
+        margin-top: 10px;
+        color: $secondary-color;
+    }
+
+    h1 {
+        margin-left: $nav-small-space;
+        font-weight: bold;
+    }
+
+    h4 {
+        margin-right: $nav-small-space;
+
+        &:hover {
+            color: $terciary-color;
+        }
+    }
+
+    #last-item {
+        margin-right: $nav-big-space;
+    }
+}
