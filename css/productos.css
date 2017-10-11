@@ -23,16 +23,19 @@ nav {
     nav h4:hover {
       color: #447F7D; }
   nav #last-item {
-    margin-right: 100px; }
+    margin-right: 50px; }
 
-#product-info-1 {
+.product-info {
   font-size: 2em; }
-  #product-info-1 h1 {
+  .product-info h1 {
     font-weight: bold;
     font-size: 2em; }
 
-#product-pic-1 {
+.product-pic {
   border-radius: 100%;
+  margin: 0 auto; }
+
+#product-pic-1 {
   background: url("../img/soap.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

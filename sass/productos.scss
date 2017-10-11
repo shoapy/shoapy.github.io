@@ -51,11 +51,11 @@ nav {
     }
 
     #last-item {
-        margin-right: $nav-big-space;
+        margin-right: $nav-small-space;
     }
 }
 
-#product-info-1 {
+.product-info {
     font-size: 2em;
 
     h1 {
@@ -64,7 +64,12 @@ nav {
     }
 }
 
-#product-pic-1 {
+.product-pic {
     border-radius: 100%;
+    margin: 0 auto;
+}
+
+#product-pic-1 {
+
     @include st-bg-img("../img/soap.jpg");
 }
