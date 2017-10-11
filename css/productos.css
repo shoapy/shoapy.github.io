@@ -6,6 +6,9 @@ body {
 .indie {
   font-family: 'Indie Flower', sans-serif; }
 
+.product-info-color {
+  color: #0077FF; }
+
 nav {
   text-align: center;
   background-color: #89FFFA; }
@@ -21,5 +24,19 @@ nav {
       color: #447F7D; }
   nav #last-item {
     margin-right: 100px; }
+
+#product-info-1 {
+  font-size: 2em; }
+  #product-info-1 h1 {
+    font-weight: bold;
+    font-size: 2em; }
+
+#product-pic-1 {
+  border-radius: 100%;
+  background: url("../img/soap.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 /*# sourceMappingURL=productos.css.map */
