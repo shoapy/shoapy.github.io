@@ -4,6 +4,7 @@
 $primary-color: #89FFFA;
 $secondary-color: #22403E;
 $terciary-color: #447F7D;
+$new-blue: #0077FF;
 
 $nav-big-space: 100px;
 $nav-small-space: 50px;
@@ -16,6 +17,12 @@ $nav-small-space: 50px;
     background-size: cover;
 }
 
+@mixin round ($value) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -25,7 +32,7 @@ body {
 }
 
 .product-info-color {
-    color: #0077FF;
+    color: $new-blue;
 }
 
 nav {
@@ -67,6 +74,12 @@ nav {
         font-weight: bold;
         font-size: 2em;
     }
+
+    div {
+        padding: 20px;
+        border: 3px solid $new-blue;
+        @include round(20px);
+    }
 }
 
 #product-info-2, #product-info-3 {
@@ -80,5 +93,6 @@ nav {
 .product-pic {
     width: 100%;
     height: 100%;
-    border-radius: 100%;
+
+    @include round(100%);
 }
