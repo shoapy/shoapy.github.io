@@ -16,10 +16,9 @@ nav {
     margin-top: 10px;
     color: #22403E; }
   nav h1 {
-    margin-left: 50px;
     font-weight: bold; }
   nav h4 {
-    margin-right: 50px; }
+    display: inline-block; }
     nav h4:hover {
       color: #447F7D; }
   nav #last-item {

@@ -39,18 +39,19 @@ nav {
     text-align: center;
     background-color: $primary-color;
 
-    h1, h4 {
+    h1, h5 {
         margin-top: 10px;
         color: $secondary-color;
     }
 
     h1 {
-        margin-left: $nav-small-space;
+        // margin-left: $nav-small-space;
         font-weight: bold;
     }
 
-    h4 {
-        margin-right: $nav-small-space;
+    h5 {
+        // margin-right: $nav-small-space;
+        display: inline-block;
 
         &:hover {
             color: $terciary-color;
@@ -85,4 +86,8 @@ nav {
 
 .new-blue {
     color: $new-blue;
+}
+
+img {
+    width: 50%;
 }

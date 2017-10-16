@@ -34,12 +34,13 @@ nav {
     }
 
     h1 {
-        margin-left: $nav-small-space;
+        // margin-left: $nav-small-space;
         font-weight: bold;
     }
 
     h4 {
-        margin-right: $nav-small-space;
+        // margin-right: $nav-small-space;
+        display: inline-block;
 
         &:hover {
             color: $terciary-color;
