@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300');
+
+$primary-color: #89FFFA;
+$secondary-color: #22403E;
+$terciary-color: #447F7D;
+$new-blue: #0077FF;
+
+$nav-big-space: 100px;
+$nav-small-space: 50px;
+
+@mixin st-bg-img ($img) {
+    background: url($img) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@mixin round ($value) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.indie {
+    font-family: 'Indie Flower', sans-serif;
+}
+
+body {
+    @include st-bg-img("../img/vacas.jpg");
+}
+
+nav {
+    text-align: center;
+    background-color: $primary-color;
+
+    h1, h4 {
+        margin-top: 10px;
+        color: $secondary-color;
+    }
+
+    h1 {
+        margin-left: $nav-small-space;
+        font-weight: bold;
+    }
+
+    h4 {
+        margin-right: $nav-small-space;
+
+        &:hover {
+            color: $terciary-color;
+        }
+    }
+
+    #last-item {
+        margin-right: $nav-small-space;
+    }
+}
+
+#main {
+    background-color: rgba(255, 255, 255, 0.8);
+
+    h1 {
+        font-family: 'Indie Flower';
+        text-align: center;
+        color: $new-blue;
+        margin: 30px;
+    }
+
+    p {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    strong {
+        font-size: 1.5em;
+    }
+}
+
+.new-blue {
+    color: $new-blue;
+}
