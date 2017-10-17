@@ -28,7 +28,7 @@ nav {
     text-align: center;
     background-color: $primary-color;
 
-    h1, h4 {
+    h1, h5 {
         margin-top: 10px;
         color: $secondary-color;
     }
@@ -38,7 +38,7 @@ nav {
         font-weight: bold;
     }
 
-    h4 {
+    h5 {
         // margin-right: $nav-small-space;
         display: inline-block;
 

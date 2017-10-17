@@ -9,14 +9,14 @@ body {
 nav {
   text-align: center;
   background-color: #89FFFA; }
-  nav h1, nav h4 {
+  nav h1, nav h5 {
     margin-top: 10px;
     color: #22403E; }
   nav h1 {
     font-weight: bold; }
-  nav h4 {
+  nav h5 {
     display: inline-block; }
-    nav h4:hover {
+    nav h5:hover {
       color: #447F7D; }
   nav #last-item {
     margin-right: 50px; }
