@@ -25,6 +25,8 @@ $nav-small-space: 50px;
 
 body {
     font-family: 'Poppins', sans-serif;
+
+    @include st-bg-img("../img/vacas.jpg");
 }
 
 .indie {
@@ -63,6 +65,10 @@ nav {
     }
 }
 
+.alpha-background {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 .product-info {
     position: fixed;
     width: 50%;
@@ -80,9 +86,16 @@ nav {
     }
 
     div {
-        padding: 20px;
         border: 3px solid $new-blue;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
         @include round(20px);
+
+        ul {
+            width: 90%;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -99,4 +112,8 @@ nav {
     height: 100%;
 
     @include round(100%);
+}
+
+.new-blue {
+    color: $new-blue;
 }

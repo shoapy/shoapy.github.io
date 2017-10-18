@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300");
 body {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  background: url("../img/vacas.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .indie {
   font-family: 'Indie Flower', sans-serif; }
@@ -24,6 +29,9 @@ nav {
   nav #last-item {
     margin-right: 50px; }
 
+.alpha-background {
+  background-color: rgba(255, 255, 255, 0.8); }
+
 .product-info {
   position: fixed;
   width: 50%;
@@ -36,11 +44,15 @@ nav {
     font-weight: bold;
     font-size: 4em; }
   .product-info div {
-    padding: 20px;
     border: 3px solid #0077FF;
+    padding-top: 15px;
+    padding-bottom: 15px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px; }
+    .product-info div ul {
+      width: 90%;
+      margin: 0 auto; }
 
 #product-info-2, #product-info-3 {
   opacity: 0; }
@@ -54,5 +66,8 @@ nav {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%; }
+
+.new-blue {
+  color: #0077FF; }
 
 /*# sourceMappingURL=productos.css.map */
